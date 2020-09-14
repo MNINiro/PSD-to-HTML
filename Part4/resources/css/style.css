@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+ul li{
+    list-style-type: none;
+}  
+/* Heading */
+h1{
+    font-size: 42px;
+    color: #fff;
+}
+
+/* Reusable components */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Button */
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom: 3px solid #000;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border-radius: 3px;
+    display: inline-block; /* to give extra space around the button */
+    margin-top: 45px; /* will give extra space over inline-block */
+}
+
+/* header section starts here */
+header{
+    /*background: #87509c;*/
+    background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(css_img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    height: 85vh; /* vertical height */ 
+    position: relative;
+}
+
+.logo{
+    height: 35px;
+    width: auto;
+    margin-top: 35px;
+    float: left;
+}
+/* Main Menu */
+.main-nav{
+    float: right;
+    margin-top: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 10px;    
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100,58,121,0); /* opacity 1 will make background invisible */
+    padding: 6px 16px;
+    border-radius: 3px;
+    display: inline-block; /* to cover the full area of a button */
+    font-size: 16px;
+    transition: 3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background: rgba(100, 58, 121, 1); /* opacity 1 will make background visible */
+}
+.main-nav li.active a{
+    background: rgba(100, 58, 121, 1); /* opacity 1 will make background visible */
+}
+.hero-text-box{
+    position: absolute;
+    top: 50%; /* it will push 50% down */
+    left:50%; /* it will push 50% right */
+    transform: translate(-50%, -50%); /* it will return 50% of above 50% top and left */
+    text-align: center;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
