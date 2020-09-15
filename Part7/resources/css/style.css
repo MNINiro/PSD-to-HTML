@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /* instead of using 10px, here we are using 62.5%. 100% = 16px by default. It's for browser compatibility. No more complication in zoom-in or zoom-out */ 
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+}
+ul li{
+    list-style-type: none;
+}  
+/* Heading */
+h1{
+    font-size: 4.2rem; /* 1rem = font size in px will be divided by default font-size. Here default fornt size is 10 by default it is 16. Moreover, all font size will increase or decrease based on default font size */ 
+    color: #fff;
+}
+
+.clearfix::after{ /* to give space at the top and bottom of each section */
+    content: "";
+    display: block;
+    clear: both; /* it clears both floats */
+    height: 0;
+    visibility: hidden;
+}
+/* Reusable components */
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section{
+    padding: 8rem;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+h2::after{
+    content:"";
+    display: block;
+    height: .4rem;
+    background: #fff;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+/* Little description -Paragraph */
+.little-description{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+}
+
+/* Button */
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom: .3rem solid #000;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+    border-radius: .3rem;
+    display: inline-block; /* to give extra space around the button */
+    margin-top: 4.5rem; /* will give extra space over inline-block */
+
+}
+
+/* header section starts here */
+header{
+    /*background: #87509c;*/
+    background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(css_img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed; /* to fixed the background image. Now other parts float over it */
+    height: 85vh; /* vertical height */ 
+    position: relative;
+}
+
+.logo{
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+/* Main Menu */
+.main-nav{
+    float: right;
+    margin-top: 4.0rem;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 1.0rem;    
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100,58,121,0); /* opacity 1 will make background invisible */
+    padding: .6rem 1.6rem;
+    border-radius: .3rem;
+    display: inline-block; /* to cover the full area of a button */
+    font-size: 1.6rem;
+    transition: 3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background: rgba(100, 58, 121, 1); /* opacity 1 will make background visible */
+}
+.main-nav li.active a{
+    background: rgba(100, 58, 121, 1); /* opacity 1 will make background visible */
+}
+.hero-text-box{
+    position: absolute;
+    top: 50%; /* it will push 50% down */
+    left:50%; /* it will push 50% right */
+    transform: translate(-50%, -50%); /* it will return 50% of above 50% top and left */
+    text-align: center;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+/* Services Section */
+
+.services-section{
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(23, 194, 164, 0.9),rgba(23, 194, 164, 0.9)),  url(css_img/service-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+.services-section h2::after{
+    background: #14a58c;
+}
+.services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+    
