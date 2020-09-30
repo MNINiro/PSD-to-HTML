@@ -1,0 +1,5 @@
+Sticky Menu design starts from here
+
+jquery waypoints is used here
+
+http://imakewebthings.com/waypoints/

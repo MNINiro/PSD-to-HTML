@@ -1,0 +1,2 @@
+In this section, we will check compatibilities.
+To support multiple browsers, we can add Autoprefix extensions to the editor. Then select the code and run autoprefix selection from edit menu. it will put few extra codes if required to make your code compatible with all browsers.

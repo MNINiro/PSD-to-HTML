@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1200px){
+    header{
+        height: 65vh;
+    }
+    .row{
+        margin: 0 15px;
+    }
+    .hero-text-box{
+        width: 90%; /* % will fit it within
+        the box perfectly. better not to use px or rem */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    html{
+        font-size: 57.5%
+    }
+
+    .client-photo,
+    .client-review p,
+    .client-review .role,
+    .client-review h3{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .contact-section form{
+        width: 100%;
+        margin-left: 0;
+    }
+  }
+
+@media only screen and (max-width: 980px){
+    .span_1_of_4 {
+        width: 49.2%; /* originally 23.3% */
+    }
+
+    .span_1_of_4:nth-child(3) {
+        margin-left: 0;
+    }
+    html{
+        font-size: 62.5%
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .span_1_of_4 {
+        width: 49.2%; /* originally 23.3% */
+    }
+    .portfolio-section .col:nth-child(2) {
+        margin-right: 0px;
+    }
+    .portfolio-section .col:nth-child(3){
+        margin-left: -284px;
+    }
+
+    /* there was a margin-left of the 3rd picture, which was pushing the 4th picture to the next line.
+    To solve it, we changed the margin to 0 of the 3rd picture .col:nth-child(3)*/
+
+    /*.portfolio-section .col:nth-child(3) {
+        margin-left: 0px;
+    }*/
+
+    .portfolio-section .col:nth-child(4){
+        margin-left: 0;
+    }
+
+
+   .little-description{
+    width: 100%;
+    margin-left: 0;
+}
+    h1{
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+
+    .testimonial-section .col:nth-child(1){
+        margin-left: -100px;
+        margin-right: 80px;
+    }
+    .testimonial-section .col:nth-child(2){
+        margin-left: 0;
+    }
+    .testimonial-section .col:nth-child(3){
+        margin-left: -100px;
+        margin-right: 80px;
+    }
+    .testimonial-section .col:nth-child(4){
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .span_1_of_4 {
+        width: 100%; /* originally 23.3% */
+    }
+   .portfolio-filter button{
+        padding: 1rem 1rem;
+    }
+    .portfolio-section .col:nth-child(3){
+        margin-left: 1px;
+    }
+    .testimonial-section .col:nth-child(1){
+        margin-left: 10px;
+    }
+    .testimonial-section .col:nth-child(3){
+        margin-left: 10px;
+        margin-top: 4rem;
+    }
+    .testimonial-section .col:nth-child(4){
+        margin-top: 4rem;
+    }
+    .client-review{
+        width: 100%;
+    }
+    .client-review h3,
+    .client-review .role,
+    .client-review p{
+        font-size: 1.6rem;
+    }
+    .footer-section{
+        font-size: 1rem;
+    }
+}

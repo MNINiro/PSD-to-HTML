@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+/* header section starts here */
+header{
+    /*background: #87509c;*/
+    background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(css_img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed; /* to fixed the background image. Now other parts float over it */
+    height: 85vh; /* vertical height */ 
+    position: relative;
+}
+h1{
+    font-size: 40px; /* 1rem = font size in px will be divided by default font-size. Here default fornt size is 10 by default it is 16. Moreover, all font size will increase or decrease based on default font size */ 
+    color: #fff;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 35px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+    background-color: #87509c;
+}
+
+.topnav {
+  overflow: hidden;
+  text-transform: uppercase;
+  background: rgba(100, 58, 121, 0);
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover,
+.topnav a.active:hover {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(100,58,121,1); /* opacity 1 will make background invisible */
+    /*padding: 6px 16px;*/
+    border-radius: 5px;
+    display: inline-block; /* to cover the full area of a button */
+    /*font-size: 1.6rem;*/
+    transition: 3s;
+}
+/*
+.topnav a.active {
+  /*background-color: #87509c;
+  color: white;
+}*/
+
+.topnav .icon {
+  display: none;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%; /* it will push 50% down */
+    left:50%; /* it will push 50% right */
+    transform: translate(-50%, -50%); /* it will return 50% of above 50% top and left */
+    text-align: center;
+    line-height: 1;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+/* Services Section starts here*/
